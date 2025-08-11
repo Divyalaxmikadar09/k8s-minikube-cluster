@@ -51,7 +51,8 @@ Deploy and manage applications in Kubernetes using Minikube, `kubectl`, and Dock
     minikube ip
 
 Access using NodePort from service.yaml:
-    curl http://<minikube-ip>:<nodeport>
+     curl http://`<minikube-ip>`:`<nodeport>`
+
 
 📸 Screenshots  
   
