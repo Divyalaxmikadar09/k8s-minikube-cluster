@@ -16,11 +16,13 @@ Deploy and manage applications in Kubernetes using Minikube, `kubectl`, and Dock
     ├── index.html
     ├── service.yaml
     └── screenshots/
-    ├── pods.png
-    ├── services.png
-    ├── scale.png
-    └── curl-output.png
- 
+    ├── kubectl_get_pods.png
+    ├── kubectl_get_svc.png
+    ├── kubectl_scale_deployment.png
+    ├── kubectl_get_pods_after_scale.png
+    ├── minikube_ip.png
+    └── curl_minikube_app.png
+                       
 🚀 Steps to Run the Project
  1️⃣ Install & Start Minikube  
     minikube start
@@ -38,3 +40,32 @@ Get the Minikube IP:
     minikube ip
 Access using NodePort from service.yaml:
     curl http://<minikube-ip>:<nodeport>
+
+📸 Screenshots
+  
+🔹 Pods  
+    [![Pods](screenshots/kubectl_get_pods.png)](screenshots/kubectl_get_pods.png)  
+    *Output of `kubectl get pods` showing running pods in the deployment.*  
+
+🔹 Services  
+    [![Services](screenshots/kubectl_get_svc.png)](screenshots/kubectl_get_svc.png)  
+    *Output of `kubectl get svc` showing ClusterIP and NodePort services.*  
+
+🔹 Scale Deployment Command  
+    [![Scale Deployment](screenshots/kubectl_scale_deployment.png)](screenshots/kubectl_scale_deployment.png)  
+    *Command used to scale deployment replicas to 5.*  
+
+🔹 Pods After Scaling  
+    [![Pods After Scale](screenshots/kubectl_get_pods_after_scale.png)](screenshots/kubectl_get_pods_after_scale.png)  
+    *Output of `kubectl get pods` after scaling, showing multiple replicas.*  
+
+🔹 Minikube IP  
+    [![Minikube IP](screenshots/minikube_ip.png)](screenshots/minikube_ip.png)  
+    *Command `minikube ip` showing the IP address of the Minikube cluster.*  
+
+🔹 App Output in Curl  
+    [![Curl Output](screenshots/curl_minikube_app.png)](screenshots/curl_minikube_app.png)  
+    *Output of curl request to the NodePort service showing "Hello from Minikube!".*  
+
+
+
