@@ -1,12 +1,15 @@
 Kubernetes Minikube Cluster Project
 
+
 📌 Objective  
 Deploy and manage applications in Kubernetes using Minikube, `kubectl`, and Docker.  
+
 
 🛠 Tools Used  
 - **Minikube** – Local Kubernetes cluster  
 - **kubectl** – Kubernetes CLI tool  
 - **Docker** – For containerizing the app  
+
 
 📂 Project Structure  
     ├── .gitignore
@@ -21,6 +24,7 @@ Deploy and manage applications in Kubernetes using Minikube, `kubectl`, and Dock
     ├── kubectl_get_pods_after_scale.png
     ├── minikube_ip.png
     └── curl_minikube_app.png
+
                        
 🚀 Steps to Run the Project
 
